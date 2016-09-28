@@ -4,9 +4,8 @@ var routes = require('./app/index.js');
 
 var app = express();
 
-require('dotenv').load();
 // connect to db
-var url = process.env.MONGOLAB_URI;
+var url = 'mongodb://admin:123@ds021326.mlab.com:21326/project';
 // process.env.MONGOLAB_URI
 mongo.connect(url, function(err, db){
   if (err) {
