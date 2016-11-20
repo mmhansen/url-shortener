@@ -48,7 +48,7 @@ function urlHandler(db) {
           else {
             res.json({
               "original_url":req.params.url,
-              "short_url":"https://infinite-tundra-39395.herokuapp.com/"+ result.ops[0]._id
+              "short_url":"https://hn-url-shortener.herokuapp.com/"+ result.ops[0]._id
             })
           }
         })
